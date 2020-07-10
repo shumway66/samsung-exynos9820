@@ -47,6 +47,7 @@ jobs:
                 +always_enforce   \
                 +mass_storage   \
                 +nohardening2    \
+                +size    \
                 
         2>&1 | tee config.info
     - name: Kernel Build
