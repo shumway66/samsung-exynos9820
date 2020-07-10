@@ -50,16 +50,12 @@ jobs:
                 +sched_powersave \
                 +sched_conservative \
                 +tcp_cubic  \
-                +cp_westwood  \
+                +tcp_westwood  \
                 +tcp_htcp  \
-                +tcp_bbr   \
-                +mass_storage   \
-                +noksm   \
-                +nomodules   \
-                +noaudit   \
-                +noswap  \  
-                +nozram   \
-                +fake_config   \
+                +tcp_bbr  \
+                +mass_storage  \
+                +noksm  \
+                +nozram  \
         2>&1 | tee config.info
     - name: Kernel Build
       run: ./build :build
