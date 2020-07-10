@@ -47,7 +47,7 @@ jobs:
                 +mass_storage   \
                 +cifs   \
                 +sched_performance \
-                +sched_powersafe \
+                +sched_powersave \
                 +sched_conservative \
         2>&1 | tee config.info
     - name: Kernel Build
