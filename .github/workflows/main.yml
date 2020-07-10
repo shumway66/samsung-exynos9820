@@ -39,11 +39,15 @@ jobs:
                 +morosound               \
                 +boeffla_wl_blocker      \
                 +1000hz
-                io_maple - enable MAPLE    \
-                io_fiops - enable FIOPS    \
-                io_sio - enable SIO       \
-                io_zen - enable ZEN       \
-                io_anxiety - enable Anxiety    \
+                +io_maple     \
+                +io_fiops    \
+                +io_sio       \
+                +io_zen       \
+                +io_anxiety    \
+                +always_enforce   \
+                +mass_storage   \
+                +nohardening2    \
+                
         2>&1 | tee config.info
     - name: Kernel Build
       run: ./build :build
