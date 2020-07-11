@@ -26,7 +26,7 @@ jobs:
       run: git submodule update --init --recursive
     - name: Kernel Configure
       run: |
-        ./build config                   \
+       /build config                   \
                 model=${{ matrix.model}} \
                 name="UltimateQ_V1"        \
                 +magisk+canary            \
@@ -54,8 +54,6 @@ jobs:
                 +tcp_htcp  \
                 +tcp_bbr  \
                 +mass_storage  \
-                +noksm  \
-                +nozram  \
         2>&1 | tee config.info
     - name: Kernel Build
       run: ./build :build
