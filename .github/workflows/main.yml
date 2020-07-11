@@ -53,7 +53,7 @@ jobs:
                 +tcp_westwood  \
                 +tcp_htcp  \
                 +tcp_bbr  \
-                +mass_storage  \
+                +mass_storage \
         2>&1 | tee config.info
     - name: Kernel Build
       run: ./build :build
